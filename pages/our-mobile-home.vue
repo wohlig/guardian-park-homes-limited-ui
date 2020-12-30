@@ -2,7 +2,7 @@
   <div>
     <div>
       <b-container>
-        <div class="mb-5 text-justify">
+        <div class="our-mobile-para mb-5 py-4 px-4 text-justify">
           <p>
             We assemble each home on-site from a timber frame kit, they are not
             finished in a factory and delivered on a truck. Assembling mobile
@@ -153,6 +153,10 @@
   </div>
 </template>
 <style lang="scss">
+@import "~assets/scss/_variable";
+.our-mobile-para{
+  background: $secondary;
+}
 .mobile-home-img {
   // height: 500px;
   width: 100%;
