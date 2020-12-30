@@ -1,18 +1,27 @@
 <template>
   <section class="home-page">
-    <div class="slider-section mb-5">
+    <div class="slider-section">
       <slider-section />
+    </div>
+    <div class="mobile-design-strip mb-5">
+     <b-container>
+        <div class="strip-content">
+          <div class="strip-title">MOBILE HOME DESIGN COLLECTIONS</div>
+         <div class="strip-link"> 
+           <a href="/design-collection">View More...</a>
+         </div>
+        </div>
+     </b-container>
     </div>
     <b-container>
       <div class="our-service-section mb-5">
         <div class="text-center main-heading pb-4 ">
-          <span class="head-border">
-WORK WE DO</span>
+          <span class="head-border">DESIGN COLLECTIONS</span>
         </div>
         <div class="our-service-types">
           <b-row class="m-0 p-0">
             <b-col
-              lg="3"
+              lg="4"
               md="4"
               sm="12"
               class="mb-3"
@@ -23,54 +32,47 @@ WORK WE DO</span>
                 <div class="service-img">
                   <img :src="data.img" alt="" width="100%" />
                 </div>
-                <!-- <div class="type-name text-center sub-heading">
-                  {{ data.title }}
-                </div> -->
+                 <div class="pt-3 font-weight-bold text-center">
+              {{data.title}}
+            </div>
               </div>
             </b-col>
           </b-row>
         </div>
       </div>
     </b-container>
-  <div class="about-us-section mb-5 p-4">
+    <div class="about-us-section mb-5">
       <b-container>
-      <div>
-        <div class="title text-center main-heading pb-4">
-          <span class="head-border">ABOUT US</span>
+        <div class="py-5" >
+          <div class="title main-heading pb-4">
+            <span class="head-border">We Have Story Of Us For You To Discover</span>
+          </div>
+          <div class="des">
+            <p>
+             Our homes aren’t supplied fully finished from a factory. We produce
+            the timber frame panels in our workshops and assemble the structure
+            on-site in accordance with the ‘Caravans Act’.
+            </p>
+            <p class="m-0">
+             Each home is
+            uniquely designed and finished to the requirements of the customer,
+            in terms of style and budget.
+             
+            </p>
+            <div class="mt-4"> <a href="/about-us"><span class="read-btn">Read More...</span></a></div>
+          </div>
         </div>
-        <div class="des text-center">
-          <p>
-             Our portfolio is diverse in both scale and character,
-                        from luxury apartments to exceptional townhouses and the
-                        sympathetic conversion of heritage buildings, with all
-                        of our thoughtfully designed schemes being reflective of
-                        our desire to produce innovative homes that act as
-                        harmonious spaces, in which people can thrive.
-          </p>
-          <p class="m-0">
-           The properties we build combine a creative, considered,
-                        intelligent design philosophy with exceptional attention
-                        to detail and commitment to both innovation and the
-                        environment.
-            <a href="/about-us">Read More...</a>
-          </p>
-        </div>
-      </div>
-    </b-container>
-  </div>
+      </b-container>
+  <div class="overlay"></div>
+    </div>
   </section>
 </template>
 
 <script>
 import sliderSection from "~/components/slider-section.vue";
-import img1 from "~/assets/images/home-product/p1.png";
-import img2 from "~/assets/images/home-product/p2.png";
-import img3 from "~/assets/images/home-product/p3.png";
-import img4 from "~/assets/images/home-product/p4.png";
-import img5 from "~/assets/images/home-product/p5.png";
-import img6 from "~/assets/images/home-product/p6.png";
-import img7 from "~/assets/images/home-product/p7.png";
-import img8 from "~/assets/images/home-product/p8.png";
+import img1 from "~/assets/images/design-collection/Feature-Oak.png";
+import img2 from "~/assets/images/design-collection/Dune-Zink.png";
+import img3 from "~/assets/images/design-collection/Park-Home.png";
 
 export default {
   components: {
@@ -82,43 +84,18 @@ export default {
         {
           key: 1,
           img: img1,
-          title: "Solid wood"
+          title: "Feature Oak"
         },
         {
           key: 2,
           img: img2,
-          title: "Engineered"
+          title: "Dune Zink"
         },
         {
           key: 3,
           img: img3,
-          title: "Laminated Flooring"
+          title: "Park Home"
         },
-        {
-          key: 4,
-          img: img4,
-          title: "Exotic Bamboo"
-        },
-        {
-          key: 5,
-          img: img5,
-          title: "KAINDL Venner"
-        },
-        {
-          key: 6,
-          img: img6,
-          title: "Exterior Deck Tile"
-        },
-        {
-          key: 7,
-          img: img7,
-          title: "Exterior Deck Tile"
-        },
-        {
-          key: 8,
-          img: img8,
-          title: "Exterior Deck Tile"
-        }
       ]
     };
   }
@@ -134,13 +111,13 @@ export default {
         height: 100%;
       }
     }
-    &:hover {
-      transform: scale(1.015);
-      transition: transform 0.3s;
-    }
+    // &:hover {
+    //   transform: scale(1.015);
+    //   transition: transform 0.3s;
+    // }
   }
   .card {
-    border: 1px solid $primary;
+    border: 0px;
     cursor: pointer;
     &:hover {
       .type-name {
@@ -162,9 +139,36 @@ export default {
     }
   }
 }
-.about-us-section{
-  background-color: #362d663d;
+.about-us-section {
+  background: url("~assets/images/home-banner/about-banner.png");
+  color: white;
 }
+
+.mobile-design-strip{
+  background-color: $primary;
+.strip-content{
+  display: flex;
+  justify-content: space-between;
+}
+.strip-link{
+  margin: auto 0px;
+ a{
+   color: $white;
+ }
+}
+  .strip-title{
+        color: white;
+    padding: 20px 0px;
+    font-size: 20px;
+  }
+}
+.read-btn{
+      background: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: black;
+}
+
 // for ipad
 @media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
   .contact-us-section {
@@ -182,5 +186,12 @@ export default {
       font-size: 18px;
     }
   }
+  .mobile-design-strip{
+    .strip-title{
+    font-size: 12px;
+  }
+  }
+  
 }
+
 </style>

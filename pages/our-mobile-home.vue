@@ -2,7 +2,7 @@
   <div>
     <div>
       <b-container>
-        <div class="mb-5 text-justify">
+        <div class="our-mobile-para mb-5 py-4 px-4 text-justify">
           <p>
             We assemble each home on-site from a timber frame kit, they are not
             finished in a factory and delivered on a truck. Assembling mobile
@@ -23,9 +23,16 @@
             <div class="mb-5">
               <div class="mobile-home-img">
                 <img
-                  src="~/assets/images/design-collection/img3.jpg"
+                  src="~/assets/images/our-mobile-home/Bespoke-design-and-finish.png"
                   alt=""
                   width="100%"
+                  class="for-desk"
+                />
+                <img
+                  src="~/assets/images/our-mobile-home/mob/Bespoke-design-and-finish.png"
+                  alt=""
+                  width="100%"
+                  class="for-mob"
                 />
               </div>
               <div>
@@ -61,9 +68,16 @@
             <div class="mb-5">
               <div class="mobile-home-img">
                 <img
-                  src="~/assets/images/design-collection/img2.jpg"
+                  src="~/assets/images/our-mobile-home/Factor-Design.png"
                   alt=""
                   width="100%"
+                  class="for-desk"
+                />
+                 <img
+                  src="~/assets/images/our-mobile-home/mob/Factor-Design.png"
+                  alt=""
+                  width="100%"
+                  class="for-mob"
                 />
               </div>
               <div>
@@ -84,9 +98,16 @@
             <div class="mb-5">
               <div class="mobile-home-img">
                 <img
-                  src="~/assets/images/design-collection/img3.jpg"
+                  src="~/assets/images/our-mobile-home/Year-Round-Residential-Use.png"
                   alt=""
                   width="100%"
+                  class="for-desk"
+                />
+                  <img
+                  src="~/assets/images/our-mobile-home/mob/Year-Round-Residential-Use.png"
+                  alt=""
+                  width="100%"
+                  class="for-mob"
                 />
               </div>
               <div>
@@ -104,9 +125,16 @@
             <div class="mb-5">
               <div class="mobile-home-img">
                 <img
-                  src="~/assets/images/design-collection/img1.jpg"
+                  src="~/assets/images/our-mobile-home/Last.png"
                   alt=""
                   width="100%"
+                  class="for-desk"
+                />
+                 <img
+                  src="~/assets/images/our-mobile-home/mob/last.png"
+                  alt=""
+                  width="100%"
+                  class="for-mob"
                 />
               </div>
               <div>
@@ -125,8 +153,12 @@
   </div>
 </template>
 <style lang="scss">
+@import "~assets/scss/_variable";
+.our-mobile-para{
+  background: $secondary;
+}
 .mobile-home-img {
-  height: 500px;
+  // height: 500px;
   width: 100%;
   img {
     height: 100%;

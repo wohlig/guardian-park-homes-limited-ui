@@ -3,22 +3,8 @@
     <div class="slider-section">
       <swiper class="swiper" :options="swiperOption">
         <swiper-slide v-for="data in products" :key="data.key">
-          <div class="swiper-img for-desk">
-            <b-img :src="data.img" class="img"></b-img>
-            <!-- <div class="overlay"></div>
-            <div class="banner-text">
-              <div class="container">
-                <div class="text-center font-26">
-                  <p >
-                   We're experts <br> in innovative <br> developments
-                  </p>
-                </div>
-              </div>
-            </div> -->
-          </div>
-          <div class="swiper-img for-mob">
-            <b-img :src="data.img2" class="img"></b-img>
-            
+          <div class="swiper-img">
+            <b-img :src="data.img" class="img"/>
           </div>
         </swiper-slide>
 
@@ -30,12 +16,8 @@
 <script>
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import "swiper/css/swiper.css";
-import img1 from "~/assets/images/home-banner/slider1.png";
-import img2 from "~/assets/images/home-banner/slider2.png";
-import img3 from "~/assets/images/home-banner/slider3.png";
-import img5 from "~/assets/images/home-banner/mob-slider1.png";
-import img6 from "~/assets/images/home-banner/mob-slider2.png";
-import img7 from "~/assets/images/home-banner/mob-slider3.png";
+import img1 from "~/assets/images/home-banner/s1.jpg";
+import img2 from "~/assets/images/home-banner/s2.jpg";
 
 
 export default {
@@ -50,20 +32,12 @@ export default {
         {
           key: 1,
           img: img1,
-          img2: img5
         },
         {
           key: 2,
           img: img2,
-          img2: img6
-        },
-        {
-          key: 3,
-          img: img3,
-          img2: img7
         },
       ],
-
       swiperOption: {
         autoplay: { delay: 3000 },
         slidesPerView: 1,
@@ -96,7 +70,6 @@ export default {
   }
 };
 </script>
-
 <style lang="scss">
 @import "~assets/scss/_variable";
 .swiper-pagination-bullet {
@@ -113,29 +86,6 @@ export default {
   img {
     width: 100%;
     height: 100%;
-  }
-}
-.slider-section {
-  .overlay {
-    background: black;
-    position: absolute;
-    top: 0px;
-    height: 100%;
-    width: 100%;
-    opacity: 0.4;
-  }
-  .banner-text {
-    width: 100%;
-    font-size: 22px;
-    font-weight: bold;
-    color: $white;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    // .text-width {
-    //   width: 45%;
-    // }
   }
 }
 // for ipad
