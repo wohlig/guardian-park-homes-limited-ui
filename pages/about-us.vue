@@ -52,7 +52,7 @@
             <b-col lg="3" md="3" sm="12">
               <div class="margin-mob">
                 <img
-                  src="@/assets/images/home-product/p1.png"
+                  src="@/assets/images/about us/banner/01.png"
                   alt=""
                   width="100%"
                 />
@@ -62,7 +62,7 @@
             <b-col lg="3" md="3" sm="12">
               <div class="margin-mob">
                 <img
-                  src="@/assets/images/home-product/p2.png"
+                  src="@/assets/images/about us/banner/02.png"
                   alt=""
                   width="100%"
                 />
@@ -72,7 +72,7 @@
             <b-col lg="3" md="3" sm="12">
               <div class="margin-mob">
                 <img
-                  src="@/assets/images/home-product/p3.png"
+                  src="@/assets/images/about us/banner/03.png"
                   alt=""
                   width="100%"
                 />
@@ -82,7 +82,7 @@
             <b-col lg="3" md="3" sm="12">
               <div class="margin-mob">
                 <img
-                  src="@/assets/images/home-product/p7.png"
+                  src="@/assets/images/about us/banner/04.png"
                   alt=""
                   width="100%"
                 />
@@ -118,7 +118,7 @@
       </b-container>
       <div>
         <img
-          src="~assets/images/home-banner/slider2.png"
+          src="~assets/images/about us/about-banner.png"
           alt=""
           class="img-fluid"
         />
