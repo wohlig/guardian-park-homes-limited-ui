@@ -2,7 +2,7 @@
   <div>
     <div>
       <b-container>
-        <div>
+        <div class="mb-5 text-justify">
           <p>
             We assemble each home on-site from a timber frame kit, they are not
             finished in a factory and delivered on a truck. Assembling mobile
@@ -20,16 +20,16 @@
       <b-container>
         <b-row>
           <b-col>
-            <div class="mb-4">
-              <div>
-                  <img
-                src="~/assets/images/design-collection/img3.jpg"
-                alt=""
-                width="100%"
-              />
+            <div class="mb-5">
+              <div class="mobile-home-img">
+                <img
+                  src="~/assets/images/design-collection/img3.jpg"
+                  alt=""
+                  width="100%"
+                />
               </div>
               <div>
-                <div class="sub-heading">Bespoke design and finish.</div>
+                <div class="sub-heading pt-2">Bespoke design and finish.</div>
                 <p>
                   All our homes are bespoke. This means you choose:
                 </p>
@@ -55,22 +55,66 @@
               </div>
             </div>
           </b-col>
-          
         </b-row>
         <b-row>
-             <b-col>
-            <div class="mb-4">
-              <div>
-                  <img
-                src="~/assets/images/design-collection/img2.jpg"
-                alt=""
-                width="100%"
-              />
+          <b-col>
+            <div class="mb-5">
+              <div class="mobile-home-img">
+                <img
+                  src="~/assets/images/design-collection/img2.jpg"
+                  alt=""
+                  width="100%"
+                />
               </div>
               <div>
-                <div class="sub-heading">They Look Great. ‘Wow’ Factor Design.</div>
+                <div class="sub-heading pt-2">
+                  They Look Great. ‘Wow’ Factor Design.
+                </div>
                 <p>
-                  Everyone owners want it. We do our best to provide it but using the same materials and finishes as you find on conventional housing.
+                  Everyone owners want it. We do our best to provide it but
+                  using the same materials and finishes as you find on
+                  conventional housing.
+                </p>
+              </div>
+            </div>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col>
+            <div class="mb-5">
+              <div class="mobile-home-img">
+                <img
+                  src="~/assets/images/design-collection/img3.jpg"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+              <div>
+                <div class="sub-heading pt-2">Year-Round-Residential Use.</div>
+                <p>
+                  Assembling the unit onsite does allow for higher build
+                  quality. The wall thickness and insulation values.
+                </p>
+              </div>
+            </div>
+          </b-col>
+        </b-row>
+        <b-row>
+          <b-col>
+            <div class="mb-5">
+              <div class="mobile-home-img">
+                <img
+                  src="~/assets/images/design-collection/img1.jpg"
+                  alt=""
+                  width="100%"
+                />
+              </div>
+              <div>
+                <div class="sub-heading pt-2">Last Lifetimes.</div>
+                <p>
+                  The combination of build regulation structural timbers and
+                  constriction methods gives our homes and significantly longer
+                  life span.
                 </p>
               </div>
             </div>
@@ -80,3 +124,14 @@
     </div>
   </div>
 </template>
+<style lang="scss">
+.mobile-home-img {
+  height: 500px;
+  width: 100%;
+  img {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+</style>
